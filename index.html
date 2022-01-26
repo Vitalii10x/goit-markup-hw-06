@@ -81,6 +81,76 @@
                   <use href="./images/icons.svg#vector"></use>
                 </svg>
               </button>
+              <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+              <form action="#">
+              <div class="modal-form">
+                <label class="modal-text" for="user-name">Имя</label>
+                <div class="input-wrap">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="user-name"
+                  id="user-name"
+                  required
+                />
+                <svg class="input-icon"  width="18px" height="18px">
+                  <use href="./images/icons.svg#person">
+                  </svg>
+                  </div>
+              </div>
+              <div class="modal-form">
+                <label class="modal-text" for="user-phone">Телефон</label>
+                <div class="input-wrap">
+                <input
+                  type="tel"
+                  class="form-input"
+                  name="user-phone"
+                  id="user-phone"
+                  required
+                />
+                <svg class="input-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#phone">
+                  </svg>
+                  </div>
+              </div>
+              <div class="modal-form">
+                <label class="modal-text" for="user-email">Почта</label>
+                <div class="input-wrap">
+                <input
+                  type="email"
+                  class="form-input"
+                  name="user-email"
+                  id="user-email"
+                  required
+                />
+                <svg class="input-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#email">
+                  </svg>
+                  </div>
+              </div>
+              <div class="modal-form-comment">
+                <label class="modal-text" for="user-text">Комментарий</label>
+                <textarea
+                  name="user-text"
+                  id="user-text"
+                  class="form-comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+              <div>
+              <input type="checkbox" name="policy" id="policy" class="visually-hidden policy-check">
+              <label for="policy" class="check-text">
+                <span class="policy-icon-check">
+                  <svg class="policy-icon" width="16" height="15">
+                  <use href="./images/icons.svg#check">
+                  </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю&nbsp;
+                <a href="./index.html" class="check-document"
+                  >Условия договора</a>
+              </label>
+              <button type="submit" class="modal-button">Отправить</button>
+              </form>
             </div>
           </div>
         </div>
@@ -147,28 +217,28 @@
           <h2 class="section-service">Чем мы занимаемся</h2>
           <ul class="section-service-image list">
             <li class="section-service-img">
-              <img src="./images/img1.jpg" alt="Создаем сайты" width="370" />
               <div class="s-service-name">
+              <img src="./images/img1.jpg" alt="Создаем сайты" width="370" />
                 <p class="s-service-text">ДЕКСТОПНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
             <li class="section-service-img">
+              <div class="s-service-name">
               <img
                 src="./images/img2.jpg"
                 alt="Продвигаем приложения"
                 width="370"
               />
-              <div class="s-service-name">
                 <p class="s-service-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
             <li class="section-service-img">
+              <div class="s-service-name">
               <img
                 src="./images/img3.jpg"
                 alt="Увеличиваем трафик"
                 width="370"
               />
-              <div class="s-service-name">
                 <p class="s-service-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
               </div>
             </li>
@@ -523,6 +593,27 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="footer-subscribe">
+            <h3 class="footer-social-name">Подпишитесь на рассылку</h3>
+              <form action="#">
+                <div class="footer-subscribe-email">
+                  <input
+                        type="email"
+                        class="footer-email"
+                        name="user-email"
+                        id="user-email"
+                        placeholder="E-mail"
+                        required
+                      />
+                  <button type="submit" class="footer-button">
+                    Подписаться
+                    <svg class="footer-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
