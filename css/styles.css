@@ -663,8 +663,7 @@ img {
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: 0;
   color: #afb1b8;
 }
 
@@ -680,9 +679,10 @@ img {
 .client {
   display: flex;
   fill: #afb1b8;
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc(100% / 6 - 30px);
+}
+
+.client:not(:last-child) {
+  margin-right: 30px;
 }
 
 .client-link {
